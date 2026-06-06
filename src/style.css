@@ -601,6 +601,29 @@ a{
   font-size: 1rem;
 }
 
+.menu-search{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#search-input{
+  width: 100%;
+  max-width: 500px;
+  padding: 0.8rem;
+  background-color: #1A1A1A;
+  border: 1px solid #D4AF37;
+  border-radius: 4px;
+  color: #F5F5F5;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
+
+#search-input:focus{
+  outline: none;
+  border-color: #8B0000;
+}
+
 @media (max-width: 1023px) {
   .navbar {
     gap: 1rem;

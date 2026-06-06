@@ -71,5 +71,22 @@ filterBtns.forEach(btn => {
     });
 });
 
+// Lyssnar på input i sökfältet
+const searchInput = document.getElementById("search-input");
+
+searchInput.addEventListener("input", () => {
+    // Hämtar sökvärdet och omvandlar till lowercase
+    const searchValue = searchInput.value.toLowerCase();
+
+    // Filtrerar rätter baserat på sökvärdet
+    const filtered = allDishes.filter(dish =>
+        dish.name.toLowerCase().includes(searchValue) ||
+        dish.description.toLowerCase().includes(searchValue)
+    );
+
+    // Visar filtrerade rätter
+    displayDishes(filtered);
+});
+
 // Anropar funktionen
 fetchMenu();
