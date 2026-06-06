@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/favicon-QkHCqduP.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - King Dynasty</title>
+    <script type="module" crossorigin src="/assets/admin-rA7m3kbZ.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-Dezn_h7o.js">
+    <link rel="stylesheet" crossorigin href="/assets/style-AZasqS8I.css">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <a class="nav-logo" href="../index.html">King Dynasty Admin</a>
+        <button id="logout-btn" style="display:none;">Logga ut</button>
+      </nav>
+    </header>
+
+    <section class="admin-login" id="login-section">
+        <div class="admin-login-container">
+            <h2>Admin Login</h2>
+            <div class="form-group">
+                <label for="admin-username">Användarnamn</label>
+                <input type="text" id="admin-username" placeholder="Användarnamn">
+            </div>
+            <div class="form-group">
+                <label for="admin-password">Lösenord</label>
+                <input type="password" id="admin-password" placeholder="Lösenord">
+            </div>
+            <button type="button" id="login-btn">Logga in</button>
+            <p id="login-message"></p>
+        </div>
+    </section>
+
+    <section class="admin-panel" id="admin-panel" style="display:none;">
+        <div class="admin-container">
+            <h2>Lägg till rätt</h2>
+            <div class="form-group">
+                <label for="dish-name">Namn</label>
+                <input type="text" id="dish-name" placeholder="Rättens namn">
+            </div>
+            <div class="form-group">
+                <label for="dish-description">Beskrivning</label>
+                <input type="text" id="dish-description" placeholder="Beskrivning">
+            </div>
+            <div class="form-group">
+                <label for="dish-price">Pris</label>
+                <input type="number" id="dish-price" placeholder="Pris i kr">
+            </div>
+            <div class="form-group">
+                <label for="dish-category">Kategori</label>
+                <select id="dish-category">
+                    <option value="Förrätter">Förrätter</option>
+                    <option value="Varmrätter">Varmrätter</option>
+                    <option value="Efterrätter">Efterrätter</option>
+                    <option value="Drycker">Drycker</option>
+                </select>
+            </div>
+            <button type="button" id="add-dish-btn">Lägg till rätt</button>
+            <p id="dish-message"></p>
+        </div>
+
+        <div class="admin-container">
+            <h2>Hantera meny</h2>
+            <div id="admin-menu-list"></div>
+        </div>
+
+        <div class="admin-container">
+            <h2>Bokningar</h2>
+            <div id="admin-booking-list"></div>
+        </div>
+
+    </section>
+
+  </body>
+</html>
