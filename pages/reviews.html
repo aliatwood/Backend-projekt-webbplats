@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="../src/pictures/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meny - King Dynasty</title>
+    <title>Recensioner - King Dynasty</title>
     <link rel="stylesheet" href="../src/style.css">
   </head>
   <body>
@@ -22,23 +22,41 @@
     </header>
 
     <section class="page-banner">
-        <h1>Vår meny</h1>
-        <p>Autentiska asiatiska smaker</p>
+        <h1>Recensioner</h1>
+        <p>Vad våra gäster säger om oss</p>
     </section>
 
-    <section class="menu-section">
-      <div class="menu-search">
-        <input type="text" id="search-input" placeholder="Sök efter rätt...">
-      </div>
-      <div class="menu-filter">
-        <button class="filter-btn active" data-category="all">Alla</button>
-        <button class="filter-btn" data-category="Förrätter">Förrätter</button>
-        <button class="filter-btn" data-category="Varmrätter">Varmrätter</button>
-        <button class="filter-btn" data-category="Efterrätter">Efterrätter</button>
-        <button class="filter-btn" data-category="Drycker">Drycker</button>
-      </div>
-      <div class="menu-grid" id="menu-items">
-      </div>
+    <section class="reviews-section">
+        <div class="reviews-container">
+
+            <div class="reviews-form-wrapper">
+                <h2>Lämna en recension</h2>
+                <div class="form-group">
+                    <label for="review-name">Namn</label>
+                    <input type="text" id="review-name" placeholder="Ditt namn">
+                </div>
+                <div class="form-group">
+                    <label for="review-rating">Betyg</label>
+                    <select id="review-rating">
+                        <option value="5">⭐⭐⭐⭐⭐ - Utmärkt</option>
+                        <option value="4">⭐⭐⭐⭐ - Bra</option>
+                        <option value="3">⭐⭐⭐ - Ok</option>
+                        <option value="2">⭐⭐ - Dåligt</option>
+                        <option value="1">⭐ - Mycket dåligt</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review-comment">Kommentar</label>
+                    <textarea id="review-comment" rows="4" placeholder="Berätta om din upplevelse"></textarea>
+                </div>
+                <button type="button" id="review-btn">Skicka recension</button>
+                <p id="review-message"></p>
+            </div>
+            <div class="review-list-wrapper">
+                <h2>Gästrecensioner</h2>
+                <div id="reviews-list"></div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -74,6 +92,6 @@
 
     </footer>
 
-    <script type="module" src="../src/menu.js"></script>
+    <script type="module" src="../src/reviews.js"></script>
   </body>
 </html>
