@@ -386,6 +386,43 @@ a{
   border-bottom: 2px solid #D4AF37;
 }
 
+.booking-section{
+  padding: 4rem 3rem;
+}
+
+.booking-container{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking-container h2{
+  font-size: 1.8rem;
+  color: #D4AF37;
+  margin-bottom: 2rem;
+}
+
+#booking-btn{
+  padding: 0.8rem 2rem;
+  background-color: #D4AF37;
+  color: #000;
+  border: 2px solid #8B0000;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  font-family: Georgia, serif;
+  display: block;
+  margin: 0 auto;
+}
+
+#booking-btn:hover{
+  opacity: 0.8;
+}
+
+#booking-message{
+  margin-top: 1rem;
+  color: #D4AF37;
+}
 
 @media (max-width: 1023px) {
   .navbar {
@@ -502,6 +539,10 @@ a{
   }
 
   .contact-section{
+    padding: 2rem 1rem;
+  }
+
+  .booking-section{
     padding: 2rem 1rem;
   }
 }
