@@ -424,6 +424,46 @@ a{
   color: #D4AF37;
 }
 
+.menu-section{
+  padding: 4rem 3rem;
+}
+
+.menu-filter{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn{
+  padding: 0.6rem 1.5rem;
+  background-color: #1A1A1A;
+  color: #F5F5F5;
+  border: 1px solid #D4AF37;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: Georgia, serif;
+}
+
+.filter-btn:hover{
+  background-color: #D4AF37;
+  color: #000;
+}
+
+.filter-btn.active{
+  background-color: #D4AF37;
+  color: #000;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
 @media (max-width: 1023px) {
   .navbar {
     gap: 1rem;
@@ -468,6 +508,14 @@ a{
 
   .contact-container{
     gap: 2rem;
+  }
+
+    .menu-section{
+    padding: 3rem 2rem;
+  }
+
+  .menu-grid{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -544,5 +592,17 @@ a{
 
   .booking-section{
     padding: 2rem 1rem;
+  }
+
+    .menu-section{
+    padding: 2rem 1rem;
+  }
+
+  .menu-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .menu-filter{
+    gap: 0.5rem;
   }
 }
