@@ -13,7 +13,7 @@ Systemet hanterar en dynamisk meny, bordsbokning och adminhantering via JWT-aute
 - **pages/admin.html** - Adminpanel för att hantera meny och bokningar
 
 ## Funktionalitet
-Webbplatsen använder Fetch API för att kommunicera med ett REST API byggt i Node.js och Express, tillgängligt på https://backend-projekt-api-qkmv.onrender.com/
+Webbplatsen använder Fetch API för att kommunicera med ett REST API byggt i Node.js och Express.
 
 Funktioner:
 - Dynamisk meny hämtad från API:et
