@@ -146,7 +146,7 @@ a{
   margin-bottom: 2rem;
 }
 
-.footer-info h3 {
+.footer-info h2 {
   color: #D4AF37;
   margin-bottom: 1rem;
 }
@@ -466,6 +466,10 @@ a{
 
 .admin-login{
   padding: 4rem 3rem;
+}
+
+.admin-login h1{
+  display: none;
 }
 
 .admin-login-container{
