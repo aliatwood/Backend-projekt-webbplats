@@ -33,6 +33,11 @@ Adminpanelen nås via `/pages/admin.html`
 Inloggningsuppgifter för testning:
 - **Användarnamn:** admin
 - **Lösenord:** admin123
+**OBS:** Databasen kan nollställas vid serveromstart på Render (gratis-plan). Om inloggning inte fungerar, kör följande kommando i PowerShell för att registrera admin igen:
+
+```powershell
+Invoke-WebRequest -Uri "https://backend-projekt-api-qkmv.onrender.com/api/auth/register" -Method POST -Headers @{"Content-Type"="application/json"} -Body '{"username":"admin","password":"admin123"}' -UseBasicParsing
+```
 
 ## API
 Webbplatsen kommunicerar med detta API:
