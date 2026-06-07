@@ -33,6 +33,7 @@ Adminpanelen nås via `/pages/admin.html`
 Inloggningsuppgifter för testning:
 - **Användarnamn:** admin
 - **Lösenord:** admin123
+
 **OBS:** Databasen kan nollställas vid serveromstart på Render (gratis-plan). Om inloggning inte fungerar, kör följande kommando i PowerShell för att registrera admin igen:
 
 ```powershell
