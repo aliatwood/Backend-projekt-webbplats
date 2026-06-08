@@ -28,3 +28,12 @@ sendBtn.addEventListener("click", () => {
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
 });
+
+// Markerar aktiv sida i navbar
+const currentPage = window.location.pathname;
+const navLinks = document.querySelectorAll(".navbar a");
+navLinks.forEach(link => {
+    if (link.href.includes(currentPage)) {
+        link.classList.add("active");
+    }
+});

@@ -5,4 +5,4 @@ import"./modulepreload-polyfill-Dezn_h7o.js";/* empty css              */var e=`
         <p class="price">${e.price} kr </p>
         <p>${e.category}</p>
         </div>
-        `})}n.forEach(e=>{e.addEventListener(`click`,()=>{n.forEach(e=>e.classList.remove(`active`)),e.classList.add(`active`);let t=e.dataset.category;a(t===`all`?r:r.filter(e=>e.category===t))})});var o=document.getElementById(`search-input`);o.addEventListener(`input`,()=>{let e=o.value.toLowerCase();a(r.filter(t=>t.name.toLowerCase().includes(e)||t.description.toLowerCase().includes(e)))}),i();
+        `})}n.forEach(e=>{e.addEventListener(`click`,()=>{n.forEach(e=>e.classList.remove(`active`)),e.classList.add(`active`);let t=e.dataset.category;a(t===`all`?r:r.filter(e=>e.category===t))})});var o=document.getElementById(`search-input`);o.addEventListener(`input`,()=>{let e=o.value.toLowerCase();a(r.filter(t=>t.name.toLowerCase().includes(e)||t.description.toLowerCase().includes(e)))}),i();var s=window.location.pathname;document.querySelectorAll(`.navbar a`).forEach(e=>{e.href.includes(s)&&e.classList.add(`active`)});

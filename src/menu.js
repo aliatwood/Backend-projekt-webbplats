@@ -90,3 +90,12 @@ searchInput.addEventListener("input", () => {
 
 // Anropar funktionen
 fetchMenu();
+
+// Markerar aktiv sida i navbar
+const currentPage = window.location.pathname;
+const navLinks = document.querySelectorAll(".navbar a");
+navLinks.forEach(link => {
+    if (link.href.includes(currentPage)) {
+        link.classList.add("active");
+    }
+});

@@ -704,6 +704,11 @@ a{
   opacity: 0.5;
 }
 
+.navbar a.active{
+  color: #D4AF37;
+  border-bottom: 2px solid #D4AF37;
+}
+
 @media (max-width: 1023px) {
   .navbar {
     gap: 1rem;

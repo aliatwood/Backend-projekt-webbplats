@@ -5,4 +5,4 @@ import"./modulepreload-polyfill-Dezn_h7o.js";/* empty css              */var e=`
                     <p class="price"> ${e.price} kr </p>
                     <p> ${e.category} </p>
                 </div>
-            `})}catch{t.innerHTML=`<p> Kunde inte ladda rätter </p>`}}t();
+            `})}catch{t.innerHTML=`<p> Kunde inte ladda rätter </p>`}}t();var n=window.location.pathname;document.querySelectorAll(`.navbar a`).forEach(e=>{e.href.includes(n)&&e.classList.add(`active`)});
